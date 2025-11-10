@@ -1,5 +1,5 @@
-from class_Book import Book
-from user import User
+from classes.class_Book import Book
+from classes.user import User
 
 class Library:
     def __init__(self):
@@ -18,20 +18,20 @@ class Library:
     def list_availble_books(self):
         list_availble_books = []
         for book in self.list_of_books:
-            if book.is_availble == True:
+            if book.is_available == True:
                 list_availble_books.append(book)
                 return list_availble_books
    
     def borrow_book(self, user_id, book_isbn):
         for book in self.list_of_books:
             if book.ISBN == book_isbn:
-                if book.is_avalable == False:
+                if book.is_available == False:
                     return 'book is not available!'
                 else:
                     for user in self.list_of_users:
                         if user.id == user_id:
                             user.borrowed_books.append(book)
-                            book.is_avalable == False
+                            book.is_available == False
                             book.found_by_user = user_id
                             return
                         else:
@@ -44,7 +44,7 @@ class Library:
             if user.id == user_id:
                 for book in user.borrowed_books:
                     if book.ISBN == book_isbn:
-                        book.is_avalable == True
+                        book.is_available == True
                         book.found_by_user = None
                         user.borrowed_books.pop(book)
                         return
