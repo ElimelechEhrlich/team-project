@@ -8,7 +8,7 @@ Book:
         is_available (T/F)
     methods:
         repr() - prints book info
-# Elimelech Ehrlich -
+# Elimelech Ehrlich - Done
 User:
     attributes:
         name
