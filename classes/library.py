@@ -24,7 +24,7 @@ class Library:
                         else:
                             return 'User not registered in the library.'
                     book.is_avalable == False
-                    book.Found_by_user = user_id
+                    book.found_by_user = user_id
             else:
                 return 'book is not exist!'
 
