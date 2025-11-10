@@ -1,8 +1,8 @@
-
+from uuid import uuid4
 class User:
-    def __init__(self, name, id, borrowed_books:list[dict]):
+    def __init__(self, name, id):
         self.name = name
-        self.id = id
-        self.borrowed_books = borrowed_books
+        self.id = uuid4()
+        self.borrowed_books = []
 
     
