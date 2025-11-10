@@ -23,8 +23,8 @@ class Library:
                             user.borrowed_books.append(book)
                         else:
                             return 'User not registered in the library.'
-                    book.is_avalable == False
-                    book.found_by_user = user_id
+                        book.is_avalable == False
+                        book.found_by_user = user_id
             else:
                 return 'book is not exist!'
 
