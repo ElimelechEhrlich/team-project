@@ -6,6 +6,9 @@ class Library:
         self.list_of_books = []
         self.list_of_users = []
 
+    def return_list_of_books(self):
+        return self.list_of_books
+
     def add_book(self, book:Book):
         self.list_of_books.append(book)
 
@@ -15,7 +18,12 @@ class Library:
     def list_availble_books(self):
         list_availble_books = []
         for book in self.list_of_books:
-            if book.ISBN == True:
+            if book.is_availble == True:
                 list_availble_books.append(book)
                 return list_availble_books
-           
+   
+class SearchBook:
+    def __init__(self):
+        self.books_list = Library.return_list_of_books()
+
+            
