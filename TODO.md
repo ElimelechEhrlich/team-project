@@ -1,12 +1,14 @@
 1. create basics classes: 
+# Netanel Ozeri -  
 Book:
-    attributes:
+    attributes: 
         title   
         author
         ISBN
         is_available (T/F)
     methods:
-        __repr__() - prints book info
+        repr() - prints book info
+# Elimelech Ehrlich -
 User:
     attributes:
         name
