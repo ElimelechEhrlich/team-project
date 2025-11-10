@@ -6,10 +6,10 @@ class Library:
         self.list_of_books = []
         self.list_of_users = []
 
-    def add_book(self):
-        self.list_of_books.append(Book())
+    def add_book(self, book:Book):
+        self.list_of_books.append(book)
 
-    def add_user(self):
-        self.list_of_users.append(User())
+    def add_user(self, user:User):
+        self.list_of_users.append(user)
 
-    
+     
