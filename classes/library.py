@@ -50,3 +50,15 @@ class Library:
                         return
                 return 'book is not in borrowed_books list of user'
         return 'user not registered in the library.'
+    
+    def search_book(self, title):
+        for book in self.list_of_books:
+            if book.title == title:
+                return True
+        return False
+    
+    def search_book_by_isbd(self, bookisbd):
+        for book in self.list_of_books:
+            if book.ISBN == bookisbd:
+                return True
+        return False
