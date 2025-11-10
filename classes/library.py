@@ -1,3 +1,4 @@
+import json
 from classes.class_Book import Book
 from classes.user import User
 
@@ -57,10 +58,24 @@ class Library:
         for book in self.list_of_books:
             if book.title == user_input or book.author == user_input:
                 return True
+            
         return False
     
     def exit(self):
         pass
+
+    def file_Handling(self):
+        with open('books_data.json', 'w') as bd:
+            for book in self.list_of_books:
+                json.dump(book.__dict__, bd, indent=2)
+                # bd.write(a)
+
+
+                
+                 
+
+
+
 
 
 
