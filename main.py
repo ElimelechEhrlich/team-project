@@ -5,7 +5,7 @@ from classes.iu import Menu
 
 
 if __name__ == '__nain__':
-    library = Library()
+    library1 = Library()
     book1 = Book('A Little Book for Little Children', 'Thomas White')
     book2 = Book('A Token for Children', 'James Janeway')
     book3 = Book('Divine Songs', 'Isaac Watts')
@@ -16,8 +16,8 @@ if __name__ == '__nain__':
     user1 = User('elimelch ehrlich')
     books = [book1,book2,book3,book4,book5,book6,book7]
     for book in books:
-        library.add_book(book)
-    library.add_user(user1)
+        library1.add_book(book)
+    library1.add_user(user1)
 
-    print(library.list_availble_books())
+    print(library1.list_availble_books())
 
