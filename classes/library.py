@@ -6,12 +6,22 @@ class Library:
         self.list_of_books = []
         self.list_of_users = []
 
+    def return_list_of_books(self):
+        return self.list_of_books
+
     def add_book(self, book:Book):
         self.list_of_books.append(book)
 
     def add_user(self, user:User):
         self.list_of_users.append(user)
 
+    def list_availble_books(self):
+        list_availble_books = []
+        for book in self.list_of_books:
+            if book.is_availble == True:
+                list_availble_books.append(book)
+                return list_availble_books
+   
     def borrow_book(self, user_id, book_isbn):
         for book in self.list_of_books:
             if book.ISBN == book_isbn:
@@ -40,8 +50,3 @@ class Library:
                         return
                 return 'book is not in borrowed_books list of user'
         return 'user not registered in the library.'
-
-
-
-
-     
