@@ -25,9 +25,23 @@ class Library:
                             book.found_by_user = user_id
                             return
                         else:
-                            return 'User not registered in the library.'
-            else:
-                return 'book is not exist!'
+                            continue
+                    return 'user not registered in the library.'      
+        return 'book is not exist!'
+            
+    def return_book(self, user_id, book_isbn):
+        for user in self.list_of_users:
+            if user.id == user_id:
+                for book in user.borrowed_books:
+                    if book.ISBN == book_isbn:
+                        book.is_avalable == True
+                        book.found_by_user = None
+                        user.borrowed_books.pop(book)
+                        return
+                return 'book is not in borrowed_books list of user'
+        return 'user not registered in the library.'
+
+
 
 
      
