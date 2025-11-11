@@ -5,18 +5,6 @@ from classes.iu import Menu
 from classes.file_Handling import FileHandling
 
 library1 = Library()
-# book1 = Book('A Little Book for Little Children', 'Thomas White',1)
-# book2 = Book('A Token for Children', 'James Janeway', 2)
-# book3 = Book('Divine Songs', 'Isaac Watts', 3)
-# book4 = Book('A Description of Three Hundred Animals', 'Thomas Boreman', 4)
-# book5 = Book('The Gigantick History of the Two Famous Giants', 'Thomas Boreman', 5)
-# book6 = Book('Winter-Evening Entertainments', 'Nathaniel Crouch',6)
-# book7 = Book('The History of Fortunatus', 'Thomas Churchyard',7)
-# user1 = User('elimelch ehrlich', 315592527)
-# books = [book1,book2,book3,book4,book5,book6,book7]
-# for book in books:
-#     library1.add_book(book)
-# library1.add_user(user1)
 file_handling = FileHandling()
 try:
     books = file_handling.read_books()
