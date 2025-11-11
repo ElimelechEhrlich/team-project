@@ -22,8 +22,7 @@ class Library:
         for book in self.list_of_books:
             if book.is_available == True:
                 list_availble_books.append(book)
-                print (book)
-                return list_availble_books
+        return list_availble_books
    
     def borrow_book(self, user_id, book_isbn):
         for book in self.list_of_books:
