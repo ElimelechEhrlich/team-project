@@ -1,9 +1,9 @@
 from uuid import uuid4
 class Book:
-    def __init__(self,title: str, author: str):
+    def __init__(self,title: str, author: str, ISBN:int):
         self.title = title
         self.author = author
-        self.ISBN = str(uuid4())
+        self.ISBN = ISBN
         self.is_available:bool = True
 
     def __str__(self):

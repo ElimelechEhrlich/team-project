@@ -1,36 +1,44 @@
-{
-  "title": "A Little Book for Little Children",
-  "author": "Thomas White",
-  "ISBN": "31c777da-d2fa-47c1-bfee-fd3376fab6c3",
-  "is_available": true
-}{
-  "title": "A Token for Children",
-  "author": "James Janeway",
-  "ISBN": "fc9167d2-1ee8-4e61-82d1-defea27efc4b",
-  "is_available": true
-}{
-  "title": "Divine Songs",
-  "author": "Isaac Watts",
-  "ISBN": "7436e297-e40c-4f4f-89b7-1b53820f06de",
-  "is_available": true
-}{
-  "title": "A Description of Three Hundred Animals",
-  "author": "Thomas Boreman",
-  "ISBN": "216984c6-8985-4c2f-8826-9e7bc0b09e6a",
-  "is_available": true
-}{
-  "title": "The Gigantick History of the Two Famous Giants",
-  "author": "Thomas Boreman",
-  "ISBN": "f3dda7a5-535f-4ef9-8a30-163b6092aacf",
-  "is_available": true
-}{
-  "title": "Winter-Evening Entertainments",
-  "author": "Nathaniel Crouch",
-  "ISBN": "e79b750d-7464-4f59-8f02-5c6701742101",
-  "is_available": true
-}{
-  "title": "The History of Fortunatus",
-  "author": "Thomas Churchyard",
-  "ISBN": "5d14062d-94de-449a-b9a8-6ccb8b701348",
-  "is_available": true
-}
+[
+  {
+    "title": "A Little Book for Little Children",
+    "author": "Thomas White",
+    "ISBN": 1,
+    "is_available": true
+  },
+  {
+    "title": "A Token for Children",
+    "author": "James Janeway",
+    "ISBN": 2,
+    "is_available": true
+  },
+  {
+    "title": "Divine Songs",
+    "author": "Isaac Watts",
+    "ISBN": 3,
+    "is_available": true
+  },
+  {
+    "title": "A Description of Three Hundred Animals",
+    "author": "Thomas Boreman",
+    "ISBN": 4,
+    "is_available": true
+  },
+  {
+    "title": "The Gigantick History of the Two Famous Giants",
+    "author": "Thomas Boreman",
+    "ISBN": 5,
+    "is_available": true
+  },
+  {
+    "title": "Winter-Evening Entertainments",
+    "author": "Nathaniel Crouch",
+    "ISBN": 6,
+    "is_available": true
+  },
+  {
+    "title": "The History of Fortunatus",
+    "author": "Thomas Churchyard",
+    "ISBN": 7,
+    "is_available": true
+  }
+]
